@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+data/
+images/
+output/
+
+*.weights
+*.h5
+*.ckpt
+*.log
