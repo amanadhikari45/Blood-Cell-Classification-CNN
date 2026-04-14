@@ -4,7 +4,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/amanadhikari45/Blood-Cell-Classification-CNN)](https://github.com/amanadhikari45/Blood-Cell-Classification-CNN/issues)
 [![Version](https://img.shields.io/badge/version-2.1-green.svg?longCache=true&style=flat)](https://github.com/amanadhikari45/Blood-Cell-Classification-CNN)
 [![GitHub license](https://img.shields.io/github/license/amanadhikari45/Blood-Cell-Classification-CNN)](https://github.com/amanadhikari45/Blood-Cell-Classification-CNN/blob/master/LICENSE)
-<img src="https://user-images.githubusercontent.com/37298971/123714340-f8d70800-d82a-11eb-9742-042a5d9334a1.png" width="28">
 
 ## Dataset
 The [```Complete Blood Count (CBC) Dataset```](https://github.com/amanadhikari45/Complete-Blood-Cell-Count-Dataset) has been used for automatic identification and counting of blood cells. Download the dataset, unzip and put the ```Training```, ```Testing```, and ```Validation``` folder in the working directory.
@@ -34,7 +33,7 @@ A seven-step guideline of how to train on your own dataset is provided in this *
 
 ## Blood Cell Detection Output
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37298971/44617785-17eb0980-a88b-11e8-9018-c84f8be5cefa.png" width="500">
+  <img src="https://raw.githubusercontent.com/amanadhikari45/Blood-Cell-Classification-CNN/master/assets/detection_output.png" width="500">
 </p>
 
 ## KNN and IOU Based Verification
@@ -42,17 +41,17 @@ In some cases, our model predicts the same platelet twice. To solve this problem
 
 | Before Verification  | After Verification  |
 |:-:|:-:|
-| <p align="center"> <img src="https://user-images.githubusercontent.com/37298971/46260207-b27ede00-c504-11e8-9d00-7d7be151ee5d.jpg"> </p>  | <p align="center"> <img src="https://user-images.githubusercontent.com/37298971/46260504-a268fd80-c508-11e8-9ef0-5230d00f47a3.jpg"> </p>  |
+| <p align="center"> <img src="https://raw.githubusercontent.com/amanadhikari45/Blood-Cell-Classification-CNN/master/assets/before_verification.jpg"> </p>  | <p align="center"> <img src="https://raw.githubusercontent.com/amanadhikari45/Blood-Cell-Classification-CNN/master/assets/after_verification.jpg"> </p>  |
 
 ## Prediction on High-Resolution Image (HRI)
 We have used our model to detect and count blood cells from high-resolution blood cell smear images. These test images are of the size of ```3872 x 2592``` way higher than the size of our trained images of ```640 x 480```. So, to match the cell size of our trained images we divide those images into grid cells and run prediction in each grid cell and then combine all the prediction results.
 
 <h3 align="center">Dividing Image into Grid/Patch</h3>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37298971/45962420-a39ab600-c042-11e8-975f-9b0a077f0e0f.jpg" width="700">
+  <img src="https://raw.githubusercontent.com/amanadhikari45/Blood-Cell-Classification-CNN/master/assets/grid_patch.jpg" width="700">
 </p>
 
 <h3 align="center">Combined Output</h3>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/37298971/45961699-055a2080-c041-11e8-95b0-1c8ac3c8875b.jpg" width="700">
+  <img src="https://raw.githubusercontent.com/amanadhikari45/Blood-Cell-Classification-CNN/master/assets/combined_output.jpg" width="700">
 </p>
