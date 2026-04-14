@@ -4,8 +4,7 @@ cimport cython
 ctypedef np.float_t DTYPE_t
 from libc.math cimport exp
 from ..utils.box import BoundBox
-from nms cimport NMS
-
+from darkflow.cython_utils.nms import NMS
 #expit
 @cython.boundscheck(False) # turn off bounds-checking for entire function
 @cython.wraparound(False)  # turn off negative index wrapping for entire function
